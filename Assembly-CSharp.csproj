@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerGameplayManager.cs" />
+    <Compile Include="Assets\EndCrackers.cs" />
     <Compile Include="Assets\Scripts\PlayerColorManager.cs" />
     <Compile Include="Assets\Scripts\follow.cs" />
     <Compile Include="Assets\Scripts\ColliderChecker.cs" />
@@ -65,7 +66,7 @@
     <Compile Include="Assets\Scripts\rotate.cs" />
     <Compile Include="Assets\Scripts\ColorManager.cs" />
     <Compile Include="Assets\Scripts\color.cs" />
-    <Compile Include="Assets\EndCrackers.cs" />
+    <Compile Include="Assets\Timer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

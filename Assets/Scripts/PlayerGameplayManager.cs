@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerGameplayManager : MonoBehaviour
 {
     public GameObject particleSys;
     public int score = 0;
+    public Text scoreTXT;
     
     // Start is called before the first frame update
     void Start()
@@ -35,12 +37,15 @@ public class PlayerGameplayManager : MonoBehaviour
             particleSys.transform.position = this.gameObject.GetComponentInChildren<SpriteRenderer>().gameObject.transform.position;
             particleSys.SetActive(true);
             particleSys.GetComponent<ParticleSystem>().Play();
+            GameObject.FindGameObjectWithTag("gameplay").GetComponent<Timer>().Dead();
             Destroy(this.gameObject);
+            
         }
     }
 
     public void Score()
     {
         score++;
+        scoreTXT.text = "" + score;
     }
 }

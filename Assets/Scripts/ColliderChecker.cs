@@ -32,11 +32,13 @@ public class ColliderChecker : MonoBehaviour
         if(collider.tag == "end")
         {
             GameObject.FindGameObjectWithTag("end crackers").GetComponent<EndCrackers>().Diwali();
+            GameObject.FindGameObjectWithTag("gameplay").GetComponent<Timer>().End();
         }
         if(collider.tag == "star")
         {
             Destroy(collider.gameObject);
             this.transform.parent.gameObject.GetComponent<PlayerGameplayManager>().Score();
+            
        
         }
     }

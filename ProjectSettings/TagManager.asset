@@ -12,6 +12,9 @@ TagManager:
   - end
   - end crackers
   - star
+  - end canvas
+  - dead canvas
+  - gameplay
   layers:
   - Default
   - TransparentFX
