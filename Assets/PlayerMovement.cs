@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0) && !pressed)
         {
-            Debug.Log("Fire1");
+            
             addMovement();
             pressed = true;
         }
